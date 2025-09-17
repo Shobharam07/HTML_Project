@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Class & ID</title>
+</head>
+<body>
+    <main id="main">
+    <header>
+        <h1>Complete HTML Documentation</h1>
+        <nav>
+        <a href="webdev.html">Home</a>&nbsp;
+         <a href="htmlbasic.html">HTML Introduction</a>&nbsp;
+        <a href="List&table.html">List and Table</a>&nbsp;
+        <a href="div&classid.html">HTML Elememts</a>&nbsp;
+        <a href="form.html">HTML Form</a>&nbsp;
+        <a href="multipage.html"> Media Tag and Multi Page Website</a>
+         </nav>
+      </header><hr>
+        <h1>HTML BoilerPlate Code, Div, Class, ID, and File Path</h1>
+        <h4>Quick Links&#x1F517;</h4>
+
+        <nav>
+        <ul>
+          <li>
+<a href="#html">HTML BoilerPlate Code</a><br>
+          </li>
+          <li>
+<a href="#div">HTML Div(Division) Tag</a>
+          </li>
+          <li>
+<a href="#class">HTML Class Attribute</a>
+          </li>
+          <li>
+<a href="#id">HTML Id Attribute</a>
+          </li>
+          <li>
+<a href="#file_paths">HTML File Paths</a>
+<ul>
+    <li><a href="#absolute">Absolute File Paths</a></li>
+    <li><a href="#relative">Relative File Paths</a></li>
+</ul>
+          </li>
+          <li><a href="#file_setpath">How to set file path</a></li>
+          <li><a href="#access">How to access the back file</a></li>
+      <li>
+<a href="#Reference">Reference</a>
+          </li>
+        </ul>
+      </nav> <hr>
+      <div id="html">
+        <h2>HTML BoilerPlate Code</h2>
+
+        <p>
+          <b>HTML</b> page structure consists of the essential <b>elements</b> that are
+          required to create an <b>HTML</b> document that can be displayed on the
+          browser.
+        </p>
+        <p>
+          The following image shows the page structure of an HTML document −
+        </p>
+        <img src="images/html_page_structure.jpg" alt="HTML_structure" />
+    
+
+      <ol>
+        <li><h3> &lt;!DOCTYPE html&gt;: Declaring the Document Type</h2></li>
+            <p>The &lt;!DOCTYPE html&gt; declaration is used to specify the version of HTML. In this case, it indicates that the document is written in HTML5, which is the latest version of HTML.</p>
+     <li><h3>&lt;html&gt;: The Root Element</h3></li>
+     <p>The  element is the root element of the HTML document. Everything inside this element is considered part of the HTML document.</p>
+    <li><h3>&lt;head&gt;:Metadata of the Document</h3>
+    <p>The &lt;head&gt; section contains metadata about the document that isn't displayed on the webpage. This section includes important elements like:</p> 
+  <ul>
+    <li><h3>&lt;meta charset="UTF-8"&gt:</h3>
+    <p>Specifies the character encoding for the document (UTF-8 supports most characters from all languages).</p>
+</li>
+ <li><h3>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0:</h3>
+    <p>Controls the layout on mobile devices by setting the viewport width and scaling.</p>
+</li>
+  </ul> 
+  <li><h3>&lt;body&gt;:Visible Content of the Webpage</h3></li> 
+  <p>The &lt;body&gt; tag contains the actual content of the webpage that will be visible to users, such as text, images, and links.</p>   
+</li>
+    </ol>
+    <hr>
+      <table border="1" width="400">
+        <thead>
+            <tr>
+                <th>A Simple HTML Document</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<hr>
+<h4>Output:</h4>
+<p><h1>My First Heading</h1>
+<p>My first paragraph.</p></p>
+</td>
+            </tr>
+        </tbody>
+      </table>
+        </div>
+    <hr>
+    <div id="div">
+        <h2>HTML Div(Division) Tag</h2>
+        <p>The &lt;div&gt; tag, used in over 90% of web pages, <b>divides content into sections</b> and serves as a flexible <b>container</b> for text, images, and links. Easily styled with CSS and customized using classes or IDs, it often uses percentage-based widths like 50% or 33.33% for responsive layouts, making it key to <b>web page structure</b>.</p>
+    <ul>
+        <li><b>Block-Level Element</b>:The &lt;div&gt; tag is a block-level element, meaning it takes up the full width and starts on a new line.</li>
+    <li><b>Styling with CSS</b>: It can be styled using CSS, allowing customization like width, background color, padding, and margins.</li>
+    <li><b>Inline-Block Option</b>: By using display: inline-block, a <div> can behave like an inline element while retaining block-level features.</li>
+    <li><b>Used for Layouts</b>: <div> is often used in layouts with Flexbox or Grid to organize content and arrange sections of a webpage.</li>
+    </ul>
+    <h4>Syntax:</h4>
+    <img src="/images/div.jpg" alt="div img" ><br><br>
+    <table border="1" width="450">
+        <thead>
+            <tr>
+            <th>Div Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Div Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;h1&gt;Header Section&lt;/h1&gt;
+        &lt;p&gt;This is the header of my website.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;h2&gt;Content Section&lt;/h2&gt;
+        &lt;p&gt;This is where the main content goes.&lt;/p&gt;
+        &lt;p&gt;Div groups elements together.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;h3&gt;Footer Section&lt;/h3&gt;
+        &lt;p&gt;© 2025 All rights reserved.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre> <hr>
+<h4>Output:</h4>
+<p><div>
+        <h1>Header Section</h1>
+        <p>This is the header of my website.</p>
+    </div>
+    <div>
+        <h2>Content Section</h2>
+        <p>This is where the main content goes.</p>
+        <p>Div groups elements together.</p>
+    </div>
+    <div>
+        <h3>Footer Section</h3>
+        <p>© 2025 All rights reserved.</p>
+    </div></p>
+</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <hr>
+    <div id="class">
+        <h2>HTML Class Attribute</h2>
+        <p>The HTML <b>class attribute</b> is used to assign one or more CSS classes to an HTML element. By using classes, you can group elements together and apply consistent styles across them, streamlining both design and functionality.</p>
+        <p><b>Note:</b><b>HTML class attribute</b> Supported Tags: It supports all <b>HTML elements</b>.</p>
+        <h3>Syntax:</h3>
+        <h3>1-Single class in an HTML element</h3>
+        <img src="/images/class.png" alt="class img" width="450">
+        <h3>2-Multiple classes in a single HTML element</h3>
+        <img src="/images/multiclass.png" alt="multiclass" width="450">
+        <hr><br>
+        <table border="1" width="450">
+            <thead>
+                <tr>
+                    <th>Example of Class Attribute</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        .country {
+            background-color: black;
+            color: white;
+            padding: 8px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2 class="country"&gt;CHINA&lt;/h2&gt;
+    &lt;p&gt;
+        China has the largest population
+        in the world.
+    &lt;/p&gt;
+    &lt;h2 class="country"&gt;INDIA&lt;/h2&gt;
+    &lt;p&gt;
+        India has the second largest
+        population in the world.
+    &lt;/p&gt;
+    &lt;h2 class="country"&gt;UNITED STATES&lt;/h2&gt;
+    &lt;p&gt;
+        United States has the third largest
+        population in the world.
+    &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre><hr>
+<h4>Output:</h4>
+<img src="/images/classatt.png" alt="classatt" width="450">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div><hr>
+    <div id="id">
+        <h2>HTML Id Attribute</h2>
+        <p><b>HTML id attribute</b> provides a <b>unique identifier</b> for an element within a 
+            document. It allows targeted selection and manipulation of the element through CSS
+             and JavaScript, facilitating specific styling and functionality. In CSS, the id attribute 
+             is used using the <b># symbol</b> followed by id. quotes are not mandatory in tag=" " in all cases.
+              But writing with quotes is a good practice.Unlike class, which can be used on multiple elements,
+               an id must be <b>unique</b> on a page <b>(only one element can have that specific id)</b>.</p>
+    <h3>Syntax:</h3>
+        <img src="/images/id.png" alt="idimg" width="450">
+       <h3><b>Note</b>: This is a global attribute, it can be used in all the tags.</h3><hr>
+       <table border="1" width="450">
+            <thead>
+                <tr>
+                    <th>Example of ID Attribute</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                       <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #geeks {
+            color: green;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Welcome to GeeksforGeeks&lt;/h2&gt;
+    &lt;h1 id="geeks"&gt;Hi Geeks!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+ <hr>
+<h4>Output:</h4>
+<img src="/images/idatt.png" alt="idatt" width="450">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div><hr>
+    <div id="file_paths">
+        <h2>HTML File Paths</h2>
+        <p><b>HTML file paths</b> specify the location of files or resources that a webpage needs to access, such as images, videos, scripts, or other HTML documents. These paths tell the web browser where to find the files required to display the content correctly or to execute scripts as intended.</p>
+    <p>To insert a file in a web page, its source must be known. For example, the syntax (&lt;<b>img src=" " alt=" "</b>&gt;) is used to insert an image file, where the path of the file is mentioned in the source (src).</p>
+    <h2>Types of File Paths</h2>
+    <ol>
+        <li><b>Absolute File Paths</b></li>
+        <li><b>Relative File Paths</b></li>
+    </ol>
+    <ol>
+        <li><h3 id="absolute">Absolute File Paths</h3>
+        <ul>
+            <li>Point directly to a resource's location on the internet and include the full URL, which consists of the protocol (http:// or https://), domain, and path to the resource.</li>
+        <li>Best for resources that are hosted externally. The browser knows exactly where to find them regardless of the current document’s location.</li>
+        </ul>
+        <h3><b>Syntax:</b>&lt;img src="https://media.geeksforgeeks.org/wp-content/uploads/geek.png" alt="My Image"&gt;</h3>
+  
+    </li>
+    </ol>
+      <table border="1" width="750">
+        <thead>
+            <tr>
+                <th>Example of Absolute File Paths</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="/images/absolute.jpeg" alt="absolute" height="300" width="750"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div><br><hr>
+        <h3 id="relative">2. Relative File Paths</h3>
+        <ul>
+            <li>Specify the path to a resource in relation to the location of the HTML file currently being viewed.</li>
+            <li>Ideal for resources within the same website. Keeps your HTML portable if the domain changes since the path doesn’t need to be updated.</li>
+        </ul>
+        <h3><b>Syntax:</b>&lt;img src="images/geeks.jpg" alt="My Image"&gt;</h3>
+        <table border="1" width="750">
+        <thead>
+            <tr>
+                <th><b>Example of Relative File Paths</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="/images/relative.jpeg" alt="relative" height="300" width="750"></td>
+            </tr>
+        </tbody>
+    </table><br><hr>
+ <table border="1" width="750" id="file_setpath">
+        <thead>
+            <tr>
+                <th><b>How to set file path</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                <p>First create an index.html file and an assets folder. after that, you have to create an images folder inside the assets folder. an image with any name should be kept inside this images folder. after that, go to the index.html file and provide the path within the src="" attribute of the <img src="" alt=""> tag (assets/images/flower.jpg).</p>
+                    <img src="/images/pathset.jpeg" alt="setpath" height="300" width="1100">
+                    <table border="1" width="1100">
+                        <thead>
+                            <th><b>Code Example</b></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img <b>src="/assets/images/flower.jpg" alt="flower"</b>&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div><br><hr><br>
+    </div>
+    <div>
+        <table border="1" width="1100" id="access">
+                        <thead>
+                            <th><b>How to access the back file</b></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>To access the file back ' ../' is used. Remember, for the file where the path will be set, you need to use '../' as many times as there are folders inside that file. The method has been shown below.</p>
+                    <img src="/images/filesystem1.jpg" alt="filesystem1" height="400" width="1100">
+                    <img src="/images/filesystem2.jpg" alt="filesystem2" height="400" width="1100">
+                               
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+    </div><br><hr>
+     <div id="Reference">
+        <h3>Reference</h3>
+        <h4>Watch this complete video to learn about all these Concept in depth.</h4>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/k78lNSAB8VY?si=WKZ32MZ7uWYY3a2h"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <br />
+         <h4> Documentation:</h4>
+         <ul>
+          <li><a
+            href="https://www.geeksforgeeks.org/html/html-introduction/"
+            target="_blank">
+           HTML page structure
+          </a></li>
+          <li>
+          <a href="https://www.geeksforgeeks.org/html/div-tag-html/" target="_blank">Div Tag</a>
+          </li>
+          <li>
+          <a href="https://www.geeksforgeeks.org/html/html-class-attribute/" target="_blank">Class Attribute</a>
+          </li>
+          <li>
+          <a href="https://www.geeksforgeeks.org/html/html-id-attribute/" target="_blank"> Id Attribute</a>
+          </li>
+          <li>
+          <a href="https://myschoolhouse.in/learn/html/file-paths.html" target="_blank">File Paths</a> 
+          </li>
+        </ul>
+        <p>
+          <a href="https://www.notion.so/HTML-Day03-2623a78e0e2280ceaffffd21d7c450d0" target="_blank">Complete Notes</a>
+        </p>
+        </div>
+      <h4><a href="#main">&#x21A9;Back to Top</a></h4>
+</main>
+</body>
+</html>

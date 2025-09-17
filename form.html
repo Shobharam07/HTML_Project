@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <main id="main">
+       <header>
+        <h1>Complete HTML Documentation</h1>
+        <nav>
+        <a href="webdev.html">Home</a>&nbsp;
+         <a href="htmlbasic.html">HTML Introduction</a>&nbsp;
+        <a href="List&table.html">List and Table</a>&nbsp;
+        <a href="div&classid.html">HTML Elememts</a>&nbsp;
+        <a href="form.html">HTML Form</a>&nbsp;
+        <a href="multipage.html"> Media Tag and Multi Page Website</a>
+         </nav>
+      </header><hr>
+        <h1>HTML Forms Tag</h1>
+        <h4>Quick Links&#x1F517;</h4>
+        <nav>
+            <ul>
+                <li><a href="#html_tag">HTML Forms Tag</a></li>
+                <li><a href="#basics_syntax">Basic Syntax</a></li>
+                <li><a href="#example1">Basic HTML Forms Example 1</a></li>
+                <li><a href="#example2">Advance HTML Form Example 2</a></li>
+                <li><a href="#form_element">Form Elements</a></li>
+                <li><a href="#Used_Input">Commonly Used Input Types in HTML Forms</a></li>
+                <li><a href="#example3">Advance HTML Form Example 3</a></li>
+                <li><a href="#Reference">Reference</a></li>
+            </ul>
+        </nav><hr>
+      <div id="html_tag">
+        <h3>HTML Forms Tag</h3>
+        <p>
+          <b>HTML forms</b>, defined using the <b>&lt;form&gt; Tags</b> are
+          essential for collecting user input on web pages. They incorporate a
+          variety of interactive controls such as text fields, numeric inputs,
+          email fields, password fields, checkboxes, radio buttons, and submit
+          buttons. Over 85% of websites rely on forms to gather data from users,
+          making them a fundamental component of modern web development.
+        </p>
+        <table border="1">
+          <thead>
+            <tr>
+              <th id="basics_syntax">Basic Syntax</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                &lt;form action="submit_page.php" method="post"&gt;
+                 <span>Form elements go here</span>
+                &lt;/form&gt;
+              </td>
+            </tr>
+          </tbody>
+        </table> <br>
+        <div>
+            <h4>Attributes of &lt;form&gt;:</h4>
+            <ul>
+                <li><b>action →</b>The URL where the form data will be sent.</li>
+                <li><b>method →</b>The HTTP method to use (GET or POST).</li>
+                <li><b>target →</b>Where to display the response (_blank, _self, etc.).</li>
+                <li><b>enctype →</b>How the form data should be encoded (important for file uploads).</li>
+            </ul>
+        </div>
+        <div>
+            <table border="1" width="650">
+                <thead>
+                    <tr>
+                        <th id="example1">Basic HTML Forms Example 1</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                 <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;HTML Forms&lt;/h2&gt;
+    &lt;form&gt;
+        &lt;label for="username"&gt;Username:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="text" id="username" name="username"&gt;&lt;br&gt;&lt;br&gt;
+        &lt;label for="password"&gt;Password:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="password" id="password" name="password"&gt;&lt;br&gt;&lt;br&gt;
+        &lt;input type="submit" value="Submit"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<hr>
+<h4>Output:</h4>
+<h2>HTML Forms</h2>
+    <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </thead>
+            </table>
+        </div><hr>
+        <div>
+            <h2>Advance HTML Forms</h2>
+            <p>This <b>HTML form </b>collects users personal information, including name, email, password, gender, date of birth, and address.</p>
+            <table border="1" width="650">
+                <thead>
+                    <tr>
+                        <th id="example2">Advance HTML Form Example 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;HTML Form&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form&gt;
+        &lt;fieldset&gt;
+            &lt;legend&gt;User Personal Information&lt;/legend&gt;
+            &lt;label for="name"&gt;Enter your full name:&lt;/label&gt;
+            &lt;input type="text" id="name" name="name" required /&gt;&lt;br&gt;&lt;br&gt;
+            &lt;label for="email"&gt;Enter your email:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email" required /&gt;&lt;br&gt;&lt;br&gt;
+            &lt;label for="password"&gt;Enter your password:&lt;/label&gt;
+            &lt;input type="password" id="password" name="pass" required /&gt;&lt;br&gt;&lt;br&gt;
+            &lt;label for="confirmPassword"&gt;Confirm your password:&lt;/label&gt;
+            &lt;input type="password" id="confirmPassword" name="confirmPass" required /&gt;&lt;br&gt;&lt;br&gt;
+            &lt;label&gt;Enter your gender:&lt;/label&gt;
+            &lt;div class="gender-group"&gt;
+                &lt;input type="radio" name="gender" value="male" id="male" required /&gt;
+                &lt;label for="male"&gt;Male&lt;/label&gt;
+                &lt;input type="radio" name="gender" value="female" id="female" /&gt;
+                &lt;label for="female"&gt;Female&lt;/label&gt;
+                &lt;input type="radio" name="gender" value="others" id="others" /&gt;
+                &lt;label for="others"&gt;Others&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;label for="dob"&gt;Enter your Date of Birth:&lt;/label&gt;
+            &lt;input type="date" id="dob" name="dob" required /&gt;&lt;br&gt;&lt;br&gt;
+            &lt;label for="address"&gt;Enter your Address:&lt;/label&gt;
+            &lt;textarea id="address" name="address" required&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+            &lt;input type="submit" value="Submit" /&gt;
+        &lt;/fieldset&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre><hr>
+<h4>Output:</h4>
+<p>
+    <form>
+        <fieldset>
+            <legend>User Personal Information</legend>
+            <label for="name">Enter your full name:</label>
+            <input type="text" id="name" name="name" required /><br><br>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" required /><br><br>
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" name="pass" required /><br><br>
+            <label for="confirmPassword">Confirm your password:</label>
+            <input type="password" id="confirmPassword" name="confirmPass" required /><br><br>
+            <label>Enter your gender:</label>
+            <div class="gender-group">
+                <input type="radio" name="gender" value="male" id="male" required />
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female" />
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="others" id="others" />
+                <label for="others">Others</label>
+            </div>
+            <label for="dob">Enter your Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required /><br><br>
+            <label for="address">Enter your Address:</label>
+            <textarea id="address" name="address" required></textarea><br><br>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset Form">
+        </fieldset>
+    </form>
+</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><hr><br>
+        <div id="form_element">
+            <table border="1" width="730">
+                <caption><b>Form Elements</b></caption>
+                <thead>
+                    <tr>
+                        <th>Elements</th>
+                        <th>Descriptions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;<b>label</b>&gt;</td>
+                        <td>It defines labels for &lt;<b>form</b>&gt; elements.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;<b>input</b>&gt;</td>
+                        <td>It is used to get input data from various types such as text, password, email, etc by changing its type.</td>
+                    </tr>
+                    <tr>
+                    <td>&lt;<b>button</b>&gt;</td>
+                    <td>It defines a clickable button to control other elements or execute a functionality.</td>
+                    </tr>
+                    <tr>
+                    <td>&lt;<b>select</b>&gt;</td>
+                     <td>It is used to create a drop-down list.</td>
+                    </tr>
+                    <tr>
+                    <td>&lt;<b>textarea</b>&gt;</td>
+                    <td>It is used to get input long text content.</td>
+                    </tr>
+                    <tr>
+                    <td>&lt;<b>fieldset</b>&gt;</td>
+                        <td>It is used to draw a box around other form elements and group the related data.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;<b>legend</b>&gt;</td>
+                        <td>It defines a caption for fieldset elements</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;<b>output</b>&gt;</td>
+                        <td>It displays the output of performed calculations.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;<b>option</b>&gt;</td>
+                        <td>It is used to define options in a drop-down list.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><hr><br>
+        <div id="Used_Input">
+        <table border="1" width="730">
+            <caption><b>Commonly Used Input Types in HTML Forms</b></caption>
+            <thead>
+                <tr>
+                    <th>Input Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;<b>input type="text"</b>&gt;</td>
+                    <td>Defines a one-line text input field</td>
+                </tr>
+                 <tr>
+                    <td>&lt;<b>input type="password"</b>&gt;</td>
+                    <td>Defines a password field</td>
+                </tr>
+                 <tr>
+                    <td>&lt;<b>input type="submit"</b>&gt;</td>
+                    <td>Defines a submit button</td>
+                </tr>
+                 <tr>
+                    <td>&lt;<b>input type="reset"</b>&gt;</td>
+                    <td>Defines a reset button</td>
+                </tr>
+                 <tr>
+                    <td>&lt;<b>input type="radio"</b>&gt;</td>
+                    <td>Defines a radio button</td>
+                </tr>
+                 <tr>
+                    <td>&lt;<b>input type="email"</b>&gt;</td>
+                    <td>Validates that the input is a valid email address.</td>
+                </tr>
+                 <tr>
+                    <td>&lt;<b>input type="number"</b>&gt;</td>
+                    <td>Allows the user to enter a number. You can specify min, max, and step attributes for range.</td>
+                </tr>
+                 <tr>
+                    <td>&lt;<b>input type="checkbox"</b>&gt;</td>
+                    <td>Used for checkboxes where the user can select multiple options.</td>
+                </tr>
+                 <tr>
+                    <td>&lt;<b>input type="date"</b>&gt;</td>
+                    <td>Allows the user to select a date from a calendar.</td>
+                </tr>
+                <tr>
+                    <td>&lt;<b>input type="time"</b>&gt;</td>
+                    <td>Allows the user to select a time.</td>
+                </tr>
+                <tr>
+                    <td>&lt;<b>input type="file"</b>&gt;</td>
+                    <td>Allows the user to select a file to upload.</td>
+                </tr>
+            </tbody>
+        </table>
+        </div> <hr><br>
+        <div id="example3">
+             <table border="1" width="730">
+                <thead>
+                    <tr>
+                        <th>Advance HTML Form Example 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                             <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Most Used HTML Form Elements&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h2&gt;Registration Form&lt;/h2&gt;
+  &lt;form&gt;
+    &lt;label for="fullname"&gt;Full Name:&lt;/label&gt;
+    &lt;input type="text" id="fullname" name="fullname" required&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;&lt;
+
+    &lt;label for="password"&gt;Password:&lt;/label&gt;
+    &lt;input type="password" id="password" name="password" required&gt;&lt;
+
+    &lt;label&gt;Gender:&lt;/label&gt;
+    &lt;input type="radio" id="male" name="gender" value="male"&gt;
+    &lt;label for="male"&gt;Male&lt;/label&gt;
+    &lt;input type="radio" id="female" name="gender" value="female"&gt;
+    &lt;label for="female"&gt;Female&lt;/label&gt;
+    &lt;input type="radio" id="other" name="gender" value="other"&gt;
+    &lt;label for="other"&gt;Other&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label&gt;Hobbies:&lt;/label&gt;
+    &lt;input type="checkbox" id="reading" name="hobby" value="reading"&gt;
+    &lt;label for="reading"&gt;Reading&lt;/label&gt;
+    &lt;input type="checkbox" id="sports" name="hobby" value="sports"&gt;
+    &lt;label for="sports"&gt;Sports&lt;/label&gt;
+    &lt;input type="checkbox" id="music" name="hobby" value="music"&gt;
+    &lt;label for="music"&gt;Music&lt;/label&gt;&lt;
+
+    &lt;label for="dob"&gt;Date of Birth:&lt;/label&gt;
+    &lt;input type="date" id="dob" name="dob"&gt;&lt;
+
+    &lt;label for="country"&gt;Country:&lt;/label&gt;
+    &lt;select id="country" name="country"&gt;
+      &lt;option value=""&gt;--Select--&lt;/option&gt;
+      &lt;option value="india"&gt;India&lt;/option&gt;
+      &lt;option value="usa"&gt;USA&lt;/option&gt;
+      &lt;option value="uk"&gt;UK&lt;/option&gt;
+      &lt;option value="canada"&gt;Canada&lt;/option&gt;
+    &lt;/select&gt;&lt;
+
+    &lt;label for="address"&gt;Address:&lt;/label&gt;&lt;br&gt;
+    &lt;textarea id="address" name="address" rows="4" cols="30"&gt;&lt;/textarea&gt;
+
+    &lt;input type="submit" value="Submit"&gt;
+    &lt;input type="reset" value="Reset"&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre><hr>
+<h4>Output:</h4>
+<p>
+    <h2>Registration Form</h2>
+  <form>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br>
+
+    <label>Hobbies:</label>
+    <input type="checkbox" id="reading" name="hobby" value="reading">
+    <label for="reading">Reading</label>
+    <input type="checkbox" id="sports" name="hobby" value="sports">
+    <label for="sports">Sports</label>
+    <input type="checkbox" id="music" name="hobby" value="music">
+    <label for="music">Music</label><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob"><br>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="">--Select--</option>
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="canada">Canada</option>
+    </select><br>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="4" cols="30"></textarea><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div><hr>
+      <div id="Reference">
+        <h3>Reference</h3>
+        <h4>
+          Watch this complete video to learn more about HTML Form.
+        </h4>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/a4j9R_DvZ8M?si=LwwvOJ3kAvRMgiB0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <br />
+        <p>
+          Documentation:
+            <a href="https://www.geeksforgeeks.org/html/html-forms/" target="_blank">HTML Form</a> 
+        </p>
+        <a href="https://www.notion.so/Forms-in-HTML-2643a78e0e2280ddadb4c7151cfb3c5f" target="_blank">Complete Notes</a>
+      </div>
+      <h4><a href="#main">&#x21A9;Back to Top</a></h4>
+    </main>
+  </body>
+</html>

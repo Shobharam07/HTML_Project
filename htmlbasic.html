@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My First HTML Page</title>
+  </head>
+  <body>
+      <main id="main">
+               <header>
+        <h1>Complete HTML Documentation</h1>
+        <nav>
+        <a href="webdev.html">Home</a>&nbsp;
+         <a href="htmlbasic.html">HTML Introduction</a>&nbsp;
+        <a href="List&table.html">List and Table</a>&nbsp;
+        <a href="div&classid.html">HTML Elememts</a>&nbsp;
+        <a href="form.html">HTML Form</a>&nbsp;
+        <a href="multipage.html"> Media Tag and Multi Page Website</a>
+         </nav>
+      </header>
+    <hr />
+   <h1>Introduction to HTML basics</h1>
+        <h4>Quick Links&#x1F517;</h4>
+
+      <nav>
+        <ul>
+          <li>
+<a href="#html">What is HTML</a><br>
+          </li>
+          <li>
+<a href="#element">What is an HTML Element</a>
+          </li>
+          <li>
+<a href="#heading">HTML Headings</a>
+          </li>
+          <li>
+<a href="#paragraph">HTML Paragraphs</a>
+          </li>
+          <li>
+<a href="#br">The &lt;br&gt; tag</a>
+          </li>
+          <li>
+<a href="#ol">HTML Ordered Lists</a>
+          </li>
+          <li>
+<a href="#ul">HTML Unordered Lists</a>
+          </li>
+          <li>
+<a href="#hr">HTML hr Tag</a>
+          </li>
+          <li>
+<a href="#a">HTML &lt;a&gt; Tag</a>
+          </li>
+          <li>
+<a href="#img">HTML IMG Tag</a>
+          </li>
+          <li>
+<a href="#Reference">Reference</a>
+          </li>
+        </ul>
+      </nav>
+    
+    <hr>
+      <div id="html">
+        <h3>What is HTML?</h3>
+        <p>
+          <b>HTML</b> stands for <b> HyperText Markup Language</b>. It is used to structure the
+          content on the web by using various elements (commonly known as tags).
+          These <b>HTML</b> elements define the different sections of a web page, such
+          as <b>headings</b>, <b>paragraphs</b>, links to other <b>webpages</b>, <b>listings</b>, <b>images</b>,
+          <b>tables</b>, etc. These elements tell the browser about the content and
+          formatting to display.
+        </p>
+        <p><b>HTML</b> is <b>HyperText</b> + <b>Markup Language</b>. Where,</p>
+        <ul>
+          <li>
+            <b>HyperText</b> refers to the way in which Web pages (HTML
+            documents) are linked together. Thus, the link available on a
+            webpage is called "HyperText".
+          </li>
+          <li>
+            <b>Markup Language</b>, which means you use HTML to simply "mark up"
+            a text document with tags that tell a Web browser how to structure
+            it to display.
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div id="htmlwork">
+        <h3>How Does HTML Work? </h3>
+        <p><b>HTML</b> documents are plain-text files saved with an <b>.html</b> extension. Browsers read these documents, interpret the markup (tags and attributes), and render the formatted content on your screen.</p>
+      <img src="/images/working-of-html.webp" alt="">
+      </div>
+    
+      <hr />
+      
+      <div id="element">
+        <h3>What is an HTML Element?</h3>
+        <p>
+          An <b>HTML</b> element is a basic building block to create a webpage, and It
+          is created by a <b>start tag</b>, content, and <b>end tag</b>. In an <b>HTML</b> element,
+          the <b>content</b> is placed between a <b>start</b> and <b>end tag</b>.
+        </p>
+        <p>The basic syntax of an <b>HTML</b> element is −</p>
+        <ul>
+          <li>
+            <pre>&lt;<b>tag_name</b>&gt;content&lt;<b>tag_name</b>&gt;</pre>
+    </li>
+        </ul>
+        <p>Examples of some <b>HTML</b> elements:</p>
+       <img src="/images/htmlelement.png" alt="html element img" height="200" width="400">
+        <table border="1">
+            <thead>
+              <tr>
+              <th>Start tag</th>
+              <th>Element content</th>
+              <th>End tag</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <td><pre>&lt;<b>h1</b>&gt;</td>
+              <td>My First Heading</td>
+              <td>&lt;/<b>h1</b> &gt;</td>
+              </tr>
+              <tr>
+              <td><pre>&lt;<b>a</b>&gt;</td>
+              <td>Creates hyperlinks</td>
+              <td>&lt;/<b>a</b> &gt;</td>
+              </tr>
+             <tr>
+              <td><pre>&lt;<b>div</b>&gt;</td>
+              <td>general-purpose container</td>
+              <td>&lt;/<b>div</b> &gt;</td>
+             </tr>
+             <tr>
+              <td><pre>&lt;<b>ol</b>&gt;</td>
+              <td>Ordered lists</td>
+              <td>&lt;/<b>ol</b> &gt;</td>
+             </tr>
+             <tr>
+              <td><pre>&lt;<b>ul</b>&gt;</td>
+              <td>Unordered lists</td>
+              <td>&lt;/<b>ul</b> &gt;</td>  
+             </tr>
+             <tr>
+             <td><pre>&lt;<b>form</b>&gt;</td>
+              <td>HTML forms to collect user inputs</td>
+              <td>&lt;/<b>form</b> &gt;</td>  
+             </tr>
+             <tr>
+             <td><pre>&lt;<b>table</b>&gt;</td>
+              <td>Defines a table</td>
+              <td>&lt;/<b>table</b> &gt;</td>  
+             </tr>
+             
+            </tbody>
+        </table>
+        <hr />
+      </div>
+      
+      <div id="heading">
+        <h3>HTML Headings</h3>
+        <p>HTML headings are used to define the titles and subtitles of sections on a webpage. They help organize the content and create a structure that is easy to navigate.</p>
+        <ul>
+          <li>Proper use of headings enhances readability by organizing content into clear sections.</li>
+          <li>Search engines utilize headings to understand page structure, aiding in SEO.</li>
+        </ul>
+        <h4>Levels of HTML Heading Tags</h4>
+        <p>HTML offers six levels of heading tags, each serving a different purpose in structuring your content:</p>
+        
+        <img src="/images/haeding.png" alt="">
+      </div>
+      <hr>
+    
+        <div id="paragraph">
+          <h3>HTML Paragraphs</h3>
+          <p>A paragraph in HTML is simply a block of text enclosed within the &lt;<b>p</b>&gt;tag. The&lt;<b>p</b>&gt; tag helps divide content into manageable, readable sections. It’s the go-to element for wrapping text in a web page that is meant to be displayed as a distinct paragraph.</p>
+          <h4>Syntax:</h4>
+          <p>&lt;<b>p</b>&gt;some content..&lt;<b>p</b>&gt;</p>
+       
+          <table border="1" width="30">
+            <thead>
+              
+                <tr>
+                  <th>HTML Paragraph Code Example</th>
+                </tr>
+             
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <pre><code>&lt;!--&lt;!DOCTYPE html&gt;--&gt;
+&lt;!--&lt;html lang="en"&gt;--&gt;
+&lt;!--&lt;head&gt;--&gt;
+&lt;!--    &lt;title&gt;The p tag&lt;/title&gt;--&gt;
+&lt;!--&lt;/head&gt;--&gt;
+&lt;!--&lt;body&gt;--&gt;
+&lt;!--need to comprase this--&gt;
+    &lt;p&gt;A Computer Science portal for geeks.&lt;/p&gt;
+    &lt;p&gt;It contains well written, well thought articles.&lt;/p&gt;
+&lt;!--&lt;/body&gt;--&gt;
+&lt;!--&lt;/html&gt;--&gt;</code></pre>
+<h4>Output:</h4>
+   <p>A Computer Science portal for geeks.</p>
+   <p>It contains well written, well thought articles.</p>     
+   <img src="/images/paragraph.png" alt="">          
+</td>
+              </tr>
+            </tbody>
+          </table>
+          
+   </div>
+   <hr>
+   <div id="br">
+        <h3>The &lt;br&gt; tag</h3>
+        <p>The HTML &lt;<b>br</b>&gt; <b>tag</b> element creates a line break, giving you a new line without starting a new paragraph. Use <br> when you want to move to the next line without beginning a whole new paragraph.</p>
+        <h5>Syntax:</h5>
+        <p>&lt;<b>br</b>&gt;</p>
+        <table border="1" width="300">
+          <thead>
+            <tr>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p> <pre><code>&lt;!--&lt;!DOCTYPE html&gt;--&gt;
+&lt;!--&lt;html lang="en"&gt;--&gt;
+&lt;!--&lt;head&gt;--&gt;
+&lt;!--    &lt;meta charset="UTF-8"&gt;--&gt;
+&lt;!--    &lt;meta name="viewport" --&gt;
+&lt;!--          content="width=device-width, initial-scale=1.0"&gt;--&gt;
+&lt;!--    &lt;title&gt;HTML paragraph&lt;/title&gt;--&gt;
+&lt;!--&lt;/head&gt;--&gt;
+&lt;!--&lt;body&gt;--&gt;
+&lt;!--need to comprase this--&gt;
+    &lt;p&gt;
+        This paragraph has multiple
+        &lt;<b>br</b> /&gt;lines. But HTML reduces them
+        &lt;<b>br</b> /&gt;to a single line, omitting
+        &lt;<b>br</b> /&gt;the carriage return we have used.
+    &lt;/p&gt;
+&lt;!--&lt;/body&gt;--&gt;
+&lt;!--&lt;/html&gt;--&gt;</code></pre></p>
+<h5>Output:</h5>
+    <pre>
+      This paragraph has multiple
+      lines. But HTML reduces them
+      to a single line, omitting
+      the carriage return we have used.
+    </pre> 
+    <img src="/images/br tag.png" alt="">             
+</td>
+            </tr>
+          </tbody>
+        </table>
+    
+    </div>
+    <hr>
+    <div id="ol">
+      <h3>HTML Ordered Lists</h3>
+      <p>An HTML Ordered List is created using the &lt;<b>ol</b>&gt;; tag to display items in a specific
+         sequence, typically numbered or alphabetically ordered. Each list item is defined using the 
+          &lt;<b>li</b>&gt;; (list item) tag. Ordered lists are widely used for instructions, rankings, and step-by-step 
+          guides—appearing in over 60% of structured web content that requires clear, sequential formatting.</p>
+          
+          <table border="1" width="300">
+            <thead>
+              <tr>
+                <th>Syntax</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <pre><code>&lt;ol&gt;
+    &lt;li&gt;Milks&lt;/li&gt;
+    &lt;li&gt;Eggs&lt;/li&gt;
+    &lt;li&gt;Breads&lt;/li&gt;
+    &lt;li&gt;Butter&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+<h4>Different Type Attributes in HTML Ordered List-</h4>
+<span>The type attribute of &lt;ol&gt; tag specifies the order we want to create.</span>
+<table border="1" height="300" width="500">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Descriptions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type="1"</td>
+      <td>This will list the items with numbers (default)</td>
+    </tr>
+    <tr>
+      <td>type="A"</td>
+      <td>This will list the items in uppercase letters.</td>
+    </tr>
+     <tr>
+      <td>type="a"</td>
+      <td>This will list the items in lowercase letters.</td>
+    </tr>
+    <tr>
+      <td>type="I"</td>
+      <td>his will list the items with uppercase Roman numbers.</td>
+    </tr>
+    <tr>
+      <td>type="i"</td>
+      <td>This will list the items with lowercase Roman numbers.</td>
+    </tr>
+  </tbody>
+</table> <br><br>
+<table border="1" width="500">
+  <thead>
+    <tr>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Numbered List Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Ordered List with Numbers&lt;/h2&gt;
+    &lt;ol&gt;
+        &lt;li&gt;JavaScript&lt;/li&gt;
+        &lt;li&gt;Python&lt;/li&gt;
+        &lt;li&gt;Java&lt;/li&gt;
+        &lt;li&gt;C++&lt;/li&gt;
+        &lt;li&gt;C#&lt;/li&gt;
+    &lt;/ol&gt;
+    <hr>
+    &lt;h2&gt;Uppercase Letters Ordered List&lt;/h2&gt;
+    &lt;ol type="A"&gt;
+        &lt;li&gt;Apple&lt;/li&gt;
+        &lt;li&gt;Banana&lt;/li&gt;
+        &lt;li&gt;Cherry&lt;/li&gt;
+        &lt;li&gt;Date&lt;/li&gt;
+    &lt;/ol&gt;
+    <hr>
+    &lt;h2&gt;Lowercase Letters Ordered List&lt;/h2&gt;
+    &lt;ol type="a"&gt;
+        &lt;li&gt;RCB&lt;/li&gt;
+        &lt;li&gt;CSK&lt;/li&gt;
+        &lt;li&gt;DC&lt;/li&gt;
+        &lt;li&gt;MI&lt;/li&gt;
+    &lt;/ol&gt;
+    <hr>
+    &lt;h2&gt;Uppercase Roman Numbers Ordered List&lt;/h2&gt;
+    &lt;ol type="I"&gt;
+        &lt;li&gt;First item&lt;/li&gt;
+        &lt;li&gt;Second item&lt;/li&gt;
+        &lt;li&gt;Third item&lt;/li&gt;
+        &lt;li&gt;Fourth item&lt;/li&gt;
+    &lt;/ol&gt;
+    <hr>
+    &lt;h2&gt;Lowercase Roman Numerals Ordered List&lt;/h2&gt;
+    &lt;ol type="i"&gt;
+        &lt;li&gt;First item&lt;/li&gt;
+        &lt;li&gt;Second item&lt;/li&gt;
+        &lt;li&gt;Third item&lt;/li&gt;
+        &lt;li&gt;Fourth item&lt;/li&gt;
+    &lt;/ol&gt;
+    <hr>
+    &lt;h1&gt;Top 5 Movies to Watch&lt;/h1&gt;
+    &lt;ol reversed&gt;
+        &lt;li&gt;The Shawshank Redemption&lt;/li&gt;
+        &lt;li&gt;The Godfather&lt;/li&gt;
+        &lt;li&gt;Inception&lt;/li&gt;
+        &lt;li&gt;Interstellar&lt;/li&gt;
+        &lt;li&gt;Pulp Fiction&lt;/li&gt;
+    &lt;/ol&gt;
+    <hr>
+    &lt;h2&gt;Control List Counting&lt;/h2&gt;
+    &lt;ol start="5"&gt;
+        &lt;li&gt;Item 5&lt;/li&gt;
+        &lt;li&gt;Item 6&lt;/li&gt;
+        &lt;li&gt;Item 7&lt;/li&gt;
+        &lt;li&gt;Item 8&lt;/li&gt;
+    &lt;/ol&gt;
+    <hr>
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h4>Output:</h4>
+<p>
+Ordered List with Numbers <br>
+1.JavaScript  <br>
+2.Python <br>
+3.Java <br>
+4.C++ <br>
+5.C# <br> <br>
+<hr>
+Uppercase Letters Ordered List <br>
+A. Apple <br>
+B. Banana <br>
+C. Cherry <br>
+D. Date <br><br>
+<hr>
+Lowercase Letters Ordered List <br>
+a. RCB <br>
+b. CSK <br>
+c. DC <br>
+d. MI <br><br>
+<hr>
+Uppercase Roman Numbers Ordered List <br>
+I. First item <br>
+II. Second item <br>
+III. Third item <br>
+IV. Fourth item <br><br>
+<hr>
+Lowercase Roman Numerals Ordered List <br>
+i. First item <br>
+ii. Second item <br>
+iii. Third item <br>
+iv. Fourth item <br><br>
+<hr>
+Top 5 Movies to Watch <br>
+5. The Shawshank Redemption <br>
+4. The Godfather <br>
+3. Inception <br>
+2. Interstellar <br>
+1.Pulp Fiction <br><br>
+<hr>
+Control List Counting <br>
+5. Item 5 <br>
+6. Item 6 <br>
+7. Item 7 <br>
+8. Item 8 <br>
+<hr>
+</p>
+<img src="/images/orderlist.png" alt="">
+</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <hr>
+        <div id="ul">
+      <h3>HTML Unordered Lists</h3>
+      <p>An unordered list in HTML is used to group a set of list items that don't need to be in a specific order. The items in an unordered list are usually 
+        displayed with bullet points by default. Here are the some key features of HTML unordered lists:</p>
+       <ul>
+        <li><b>No Order</b>: Lists items without a specific sequence.</li>
+        <li><b>Customizable Bullets</b>: Bullets can be changed with CSS.</li>
+        <li><b>Nesting</b>: Allows lists within lists.</li>
+        <li><b>Simple Syntax</b>: Created with &lt;ul&gt; and &lt;li&gt;and&lt;/ul&gt;
+       </ul>
+       <table border="1" width="400">
+        <thead>
+          <tr>
+            <th>Syntax</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+  </code></pre></td>
+          </tr>
+        </tbody>
+       </table> <br><br>
+       <table border="1" width="400">
+        <thead>
+          <tr>
+            <th>Example of Unordered List</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;
+        HTML Unordered Lists
+    &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;HTML Unordered Lists&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;HTML&lt;/li&gt;
+        &lt;li&gt;CSS&lt;/li&gt;
+        &lt;li&gt;Javascript&lt;/li&gt;
+        &lt;li&gt;React&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+  </code></pre><h4>Output</h4>
+<p>
+  HTML Unordered Lists
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+  <li>React</li>
+</ul>
+</p>
+<img src="images/unorderlist.png" alt="">
+</td>
+          </tr>
+        </tbody>
+       </table>
+      </div>
+      <hr>
+    <div id="hr">
+      <h3>HTML hr Tag</h3>
+      <p>The &lt;<b>hr</b>&gt; tag in HTML is used to create <b>a horizontal rule or line</b> that visually separates content.</p>
+    <ul>
+      <li>It is a self-closing tag and does not require an end tag.</li>
+      <li>It supports both <a href="https://www.geeksforgeeks.org/html/html-global-attributes/" target="_blank">Global Attributes</a> and <a href="https://www.geeksforgeeks.org/html/html-event-attributes/" target="_blank">Event Attributes</a>.</li>
+    </ul>
+    <h4>Syntax:</h4>
+    <p>Some Content.. &lt;hr&gt; Some Content..</p>
+    <table border="1" width="300">
+      <thead>
+        <tr>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;p&gt;
+        Normal horizontal line.
+    &lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt;
+        Horizontal line with height
+        of 30 pixels
+    &lt;/p&gt;
+    &lt;hr size="30"&gt;
+    &lt;p&gt;
+        Horizontal line with height
+        of 30 pixels and noshade.
+    &lt;/p&gt;
+    &lt;hr size="30" noshade&gt;
+&lt;/body&gt;
+&lt;/html&gt; </code></pre>
+<h4>Output:</h4>
+    <img src="/images/output.png" alt="">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    </div>
+    <hr>
+    <div id="a">
+      <h3>HTML &lt;a&gt; Tag</h3>
+      <p>The &lt;<b>a</b>&gt; tag defines a <b>hyperlink</b>, which is used to link from one page to another. The most important attribute of the &lt;<b>a</b>&gt; element is the href attribute, which indicates the link's destination. This attribute determines where the user is directed upon clicking the link.</p>
+     <h4>Syntax:</h4>
+     <p>&lt;a href = "link"&gt; Link Name &lt;/a&gt; </p>
+     <p>By default, links appear as follows in all browsers:</p>
+     <ul>
+      <li><b>Unvisited links:</b> Underlined and blue</li>
+      <li><b>Visited links:</b> Underlined and purple.</li>
+      <li><b>Active links:</b> Underlined and red.</li>
+     </ul>
+     <h4>Example</h4>
+     <ol>
+      <li>
+    <p> &lt;a href="https://www.google.com/" target="_blank"&gt;<a href="https://www.google.com/" target="_blank">Google</a>&lt;/a&gt;</p> 
+
+      </li>
+      <li>    <p> &lt;a href="mailto:example@xyz.com"" target="_blank"&gt;<a href="mailto:example@xyz.com"" target="_blank">Send Mail</a>&lt;/a&gt;</p> 
+</li>
+     </ol>
+     <img src="/images/anchor link.png" alt="" width="500">
+    </div>
+      <hr>
+      <div id="img">
+        <h3>HTML IMG Tag</h3>
+        <p>The HTML &lt;<b>img</b>&gt; tag is used to embed images in a web page. It is an empty or self-closing tag, meaning it doesn’t have a closing tag. It allows
+           to display images from various sources, such as files on a website or URLs from other websites.</p>
+      <h4>Syntax</h4>
+      <p>&lt;img src="./image.png" alt="image description" width="200" height="100"&gt;</p>
+      <h4>Example</h4>
+      <img src="/images/rohit sharma.webp" alt="rohit sharma image" height="300" width="300">
+      <p><b>Rohit Gurunath Sharma</b> (born 30 April 1987) is an Indian international cricketer 
+        and the captain of the India national team in ODIs. He is also a former captain in
+         Tests and T20Is. He is widely regarded as <b>one of the greatest opening batters 
+        of all time</b>, and one of the best batsmen of his generation.He is a right-handed 
+        batsman who plays for Mumbai Indians in Indian Premier League and for Mumbai in domestic 
+        cricket. After the team's victory at the 2024 Men's <b>T20 World Cup</b>, he announced his 
+        retirement from T20Is. He was also a member of the teams that <b>won the 2007
+         T20 World Cup, the 2013</b> <b>ICC Champions Trophy</b> <b>and was the winning captain of the
+         2025 ICC Champions Trophy</b>, <b>where he was also the player of the match in the final</b>.</p>
+         <a href="https://en.wikipedia.org/wiki/Rohit_Sharma">More about Rohit Sharma The Hitman</a>
+          </div>
+          <hr>
+          <div id="Reference">
+        <h3>Reference</h3>
+        <h4>Watch this complete video to learn about all these tags.</h4>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/GkZN_-HMCJ8?si=2DVcrcYZkoAekiXV"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <br />
+        <p>
+          Documentation:
+          <a
+            href="https://www.geeksforgeeks.org/html/html-tutorial/"
+            target="_blank"
+          >
+           To Learn more about HTML
+          </a>
+        </p>
+        <p>
+          <a href="https://www.notion.so/HTML-Hyper-Text-Markup-Language-2603a78e0e228098958fd3cbbbb540de" target="_blank">Complete Notes</a>
+        </p>
+        </div>
+      <h4><a href="#main">&#x21A9;Back to Top</a></h4>
+    </main>
+  </body>
+</html>

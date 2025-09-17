@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested List and Table</title>
+</head>
+<body>
+    <main id="main">
+          <header>
+        <h1>Complete HTML Documentation</h1>
+        <nav>
+        <a href="webdev.html">Home</a>&nbsp;
+         <a href="htmlbasic.html">HTML Introduction</a>&nbsp;
+        <a href="List&table.html">List and Table</a>&nbsp;
+        <a href="div&classid.html">HTML Elememts</a>&nbsp;
+        <a href="form.html">HTML Form</a>&nbsp;
+        <a href="multipage.html"> Media Tag and Multi Page Website</a>
+         </nav>
+      </header><hr>
+        <h1>Nested List and Table in HTML</h1>
+        <h4>Quick Links&#x1F517;</h4>
+        <nav>
+            <ul>
+                <li><a href="#nested_list">Nested List in HTML</a>
+                 <ul>
+                    <li><a href="#nun">Nested Unordered List in HTML</a></li>
+                    <li><a href="#nol">Nested Ordered List in HTML</a></li>
+                 </ul>
+                </li>
+                <li><a href="#table">Table in HTML</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <div>
+            <h2 id="nested_list">Nested List in HTML</h2>
+            <p>A nested list in HTML is a list that contains other lists within its list items. This creates a hierarchical structure, where each sublist is indented to visually represent its relationship to the parent list item.</p>
+            <ol>
+                <li><h4 id="nun">Nested Unordered List in HTML</h4></li>
+           
+            <p>An <b>unordered list</b> in HTML is a collection of items represented by <b>bullet points</b>, providing a flexible way to display information without a <b>specific order</b>.</p>
+           <p><b>Lists can be nested (list inside list):</b></p>
+           <h4>Syntax:</h4>
+           <img src="/images/unol.png" alt="unorder list" >
+           <table border="1" width="400">
+            <thead>
+                <tr>
+                    <th>Example 1</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h2&gt;A Nested List&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea
+    &lt;ul&gt;
+      &lt;li&gt;Black tea&lt;/li&gt;
+      &lt;li&gt;Green tea&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<hr>
+<h4>Output:</h4>
+<p>
+    <b>A Nested List</b>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <ul>
+            <li>Green Tea</li>
+            <li>Black Tea</li>
+        </ul>
+        <li>Milk</li>
+    </ul>
+</p>
+</td>
+</tr>
+            </tbody>
+           </table> <br><br>
+           <table border="1" width="400">
+            <thead>
+                <tr>
+                    <th>Example 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                           <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Complex Nested Unordered List&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Course Outline&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Web Development
+            &lt;ul&gt;
+                &lt;li&gt;Frontend
+                    &lt;ul&gt;
+                        &lt;li&gt;HTML
+                            &lt;ul&gt;
+                                &lt;li&gt;Elements&lt;/li&gt;
+                                &lt;li&gt;Attributes&lt;/li&gt;
+                                &lt;li&gt;Forms&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;CSS
+                            &lt;ul&gt;
+                                &lt;li&gt;Selectors&lt;/li&gt;
+                                &lt;li&gt;Box Model&lt;/li&gt;
+                                &lt;li&gt;Flexbox &amp; Grid&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;JavaScript
+                            &lt;ul&gt;
+                                &lt;li&gt;Basics
+                                    &lt;ul&gt;
+                                        &lt;li&gt;Variables&lt;/li&gt;
+                                        &lt;li&gt;Data Types&lt;/li&gt;
+                                        &lt;li&gt;Loops &amp; Conditions&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;DOM Manipulation&lt;/li&gt;
+                                &lt;li&gt;ES6+ Features&lt;/li&gt;
+                                &lt;li&gt;Frameworks
+                                    &lt;ul&gt;
+                                        &lt;li&gt;React&lt;/li&gt;
+                                        &lt;li&gt;Angular&lt;/li&gt;
+                                        &lt;li&gt;Vue&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;Backend
+                    &lt;ul&gt;
+                        &lt;li&gt;Node.js&lt;/li&gt;
+                        &lt;li&gt;Express.js&lt;/li&gt;
+                        &lt;li&gt;Authentication&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;Databases
+                    &lt;ul&gt;
+                        &lt;li&gt;SQL
+                            &lt;ul&gt;
+                                &lt;li&gt;MySQL&lt;/li&gt;
+                                &lt;li&gt;PostgreSQL&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;NoSQL
+                            &lt;ul&gt;
+                                &lt;li&gt;MongoDB&lt;/li&gt;
+                                &lt;li&gt;Redis&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;Version Control
+            &lt;ul&gt;
+                &lt;li&gt;Git&lt;/li&gt;
+                &lt;li&gt;GitHub&lt;/li&gt;
+                &lt;li&gt;Branching &amp; Merging&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;Deployment
+            &lt;ul&gt;
+                &lt;li&gt;Hosting
+                    &lt;ul&gt;
+                        &lt;li&gt;Netlify&lt;/li&gt;
+                        &lt;li&gt;Vercel&lt;/li&gt;
+                        &lt;li&gt;AWS&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;CI/CD Pipelines&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<hr>
+<h4>Output:</h4>
+<p>
+   <ul>
+        <li>Web Development
+            <ul>
+                <li>Frontend
+                    <ul>
+                        <li>HTML
+                            <ul>
+                                <li>Elements</li>
+                                <li>Attributes</li>
+                                <li>Forms</li>
+                            </ul>
+                        </li>
+                        <li>CSS
+                            <ul>
+                                <li>Selectors</li>
+                                <li>Box Model</li>
+                                <li>Flexbox & Grid</li>
+                            </ul>
+                        </li>
+                        <li>JavaScript
+                            <ul>
+                                <li>Basics
+                                    <ul>
+                                        <li>Variables</li>
+                                        <li>Data Types</li>
+                                        <li>Loops & Conditions</li>
+                                    </ul>
+                                </li>
+                                <li>DOM Manipulation</li>
+                                <li>ES6+ Features</li>
+                                <li>Frameworks
+                                    <ul>
+                                        <li>React</li>
+                                        <li>Angular</li>
+                                        <li>Vue</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Backend
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Authentication</li>
+                    </ul>
+                </li>
+                <li>Databases
+                    <ul>
+                        <li>SQL
+                            <ul>
+                                <li>MySQL</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </li>
+                        <li>NoSQL
+                            <ul>
+                                <li>MongoDB</li>
+                                <li>Redis</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Version Control
+            <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Branching & Merging</li>
+            </ul>
+        </li>
+        <li>Deployment
+            <ul>
+                <li>Hosting
+                    <ul>
+                        <li>Netlify</li>
+                        <li>Vercel</li>
+                        <li>AWS</li>
+                    </ul>
+                </li>
+                <li>CI/CD Pipelines</li>
+            </ul>
+        </li>
+    </ul>
+</p>
+                    </td>
+                </tr>
+            </tbody>
+           </table>
+           <li><h4 id="nol">Nested Ordered List in HTML</h4></li>
+           <p>In HTML, an ordered list organizes items in a numbered sequence, providing a structured way to present information.</p>
+           <h4>Syntax:</h4>
+           <img src="/images/ol.png" alt="order img">
+           <table border="1" width="400">
+        <thead>
+            <tr>
+                <th>Example 1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Nested Ordered List &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h3&gt;Nested Ordered List Example&lt;/h3&gt;
+&lt;ol&gt;
+    &lt;li&gt;Subjects&lt;/li&gt;
+    &lt;ol&gt;
+        &lt;li&gt;Mathematics&lt;/li&gt;
+        &lt;li&gt;Science&lt;/li&gt;
+        &lt;li&gt;Literature&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;li&gt;Programming Languages&lt;/li&gt;
+    &lt;ol&gt;
+        &lt;li&gt;C&lt;/li&gt;
+        &lt;li&gt;Java&lt;/li&gt;
+        &lt;li&gt;Python&lt;/li&gt;
+        &lt;li&gt;Ruby&lt;/li&gt;
+        &lt;li&gt;Swift&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;li&gt;Computer Science Concepts&lt;/li&gt;
+    &lt;ol&gt;
+        &lt;li&gt;Data Structures&lt;/li&gt;
+        &lt;li&gt;Algorithms&lt;/li&gt;
+        &lt;li&gt;Operating Systems&lt;/li&gt;
+        &lt;li&gt;Database Management&lt;/li&gt;
+        &lt;li&gt;Networking&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;li&gt;Web Technologies&lt;/li&gt;
+    &lt;ol&gt;
+        &lt;li&gt;HTML&lt;/li&gt;
+        &lt;li&gt;CSS&lt;/li&gt;
+        &lt;li&gt;JavaScript&lt;/li&gt;
+        &lt;ol&gt;
+            &lt;li&gt;React&lt;/li&gt;
+            &lt;li&gt;Angular&lt;/li&gt;
+            &lt;li&gt;Vue&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;li&gt;Bootstrap&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<hr>
+<h4>Output:</h4>
+<p>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Show Ordered List Code</title>
+</head>
+<body>
+    <h3>Nested Ordered List Example</h3>
+<ol>
+    <li>Subjects</li>
+    <ol>
+        <li>Mathematics</li>
+        <li>Science</li>
+        <li>Literature</li>
+    </ol>
+    <li>Programming Languages</li>
+    <ol>
+        <li>C</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Ruby</li>
+        <li>Swift</li>
+    </ol>
+    <li>Computer Science Concepts</li>
+    <ol>
+        <li>Data Structures</li>
+        <li>Algorithms</li>
+        <li>Operating Systems</li>
+        <li>Database Management</li>
+        <li>Networking</li>
+    </ol>
+    <li>Web Technologies</li>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <ol>
+            <li>React</li>
+            <li>Angular</li>
+            <li>Vue</li>
+        </ol>
+        <li>Bootstrap</li>
+    </ol>
+</ol>
+</body>
+</html>
+</p>
+</td>
+            </tr>
+        </tbody>
+           </table> 
+           <h4>Different Type Attributes in HTML Ordered List-</h4>
+<span>The type attribute of &lt;ol&gt; tag specifies the order we want to create.</span>
+<table border="1" height="300" width="500">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Descriptions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type="1"</td>
+      <td>This will list the items with numbers (default)</td>
+    </tr>
+    <tr>
+      <td>type="A"</td>
+      <td>This will list the items in uppercase letters.</td>
+    </tr>
+     <tr>
+      <td>type="a"</td>
+      <td>This will list the items in lowercase letters.</td>
+    </tr>
+    <tr>
+      <td>type="I"</td>
+      <td>his will list the items with uppercase Roman numbers.</td>
+    </tr>
+    <tr>
+      <td>type="i"</td>
+      <td>This will list the items with lowercase Roman numbers.</td>
+    </tr>
+  </tbody>
+</table> <br>
+           <table border="1" width="400">
+            <thead>
+                <tr>
+                    <th>Example 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                       
+                    <td>
+                         <h3>Nested Ordered List with All Types</h3><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Complex Nested Ordered List&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Complex Nested Ordered List Example&lt;/h2&gt;
+    &lt;ol type="1"&gt;<b>Numbers</b>
+        &lt;li&gt;Frontend Development
+            &lt;ol type="A"&gt; <b>Uppercase Letters </b>
+                &lt;li&gt;HTML
+                    &lt;ol type="a"&gt;<b>Lowercase Letters</b>
+                        &lt;li&gt;Basics
+                            &lt;ol type="I"&gt; <b>Uppercase Roman</b>
+                                &lt;li&gt;Elements&lt;/li&gt;
+                                &lt;li&gt;Attributes&lt;/li&gt;
+                                &lt;li&gt;Forms&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;Advanced
+                            &lt;ol type="i"&gt; <b>Lowercase Roman</b>
+                                &lt;li&gt;Semantic Tags&lt;/li&gt;
+                                &lt;li&gt;Media Elements&lt;/li&gt;
+                                &lt;li&gt;Canvas &amp; SVG&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/li&gt;
+                &lt;li&gt;CSS
+                    &lt;ol type="a"&gt;
+                        &lt;li&gt;Selectors&lt;/li&gt;
+                        &lt;li&gt;Box Model&lt;/li&gt;
+                        &lt;li&gt;Layout
+                            &lt;ol type="I"&gt;
+                                &lt;li&gt;Flexbox&lt;/li&gt;
+                                &lt;li&gt;Grid&lt;/li&gt;
+                                &lt;li&gt;Positioning&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/li&gt;
+                &lt;li&gt;JavaScript
+                    &lt;ol type="i"&gt;
+                        &lt;li&gt;Basics
+                            &lt;ol type="a"&gt;
+                                &lt;li&gt;Variables&lt;/li&gt;
+                                &lt;li&gt;Data Types&lt;/li&gt;
+                                &lt;li&gt;Operators&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;DOM Manipulation&lt;/li&gt;
+                        &lt;li&gt;ES6+ Features&lt;/li&gt;
+                        &lt;li&gt;Frameworks
+                            &lt;ol type="I"&gt;
+                                &lt;li&gt;React&lt;/li&gt;
+                                &lt;li&gt;Angular&lt;/li&gt;
+                                &lt;li&gt;Vue&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/li&gt;
+        &lt;li&gt;Backend Development
+            &lt;ol type="A"&gt;
+                &lt;li&gt;Node.js&lt;/li&gt;
+                &lt;li&gt;Express.js&lt;/li&gt;
+                &lt;li&gt;Authentication
+                    &lt;ol type="i"&gt;
+                        &lt;li&gt;Sessions&lt;/li&gt;
+                        &lt;li&gt;JWT&lt;/li&gt;
+                        &lt;li&gt;OAuth&lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/li&gt;
+        &lt;li&gt;Databases
+            &lt;ol type="I"&gt;
+                &lt;li&gt;SQL
+                    &lt;ol type="a"&gt;
+                        &lt;li&gt;MySQL&lt;/li&gt;
+                        &lt;li&gt;PostgreSQL&lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/li&gt;
+                &lt;li&gt;NoSQL
+                    &lt;ol type="i"&gt;
+                        &lt;li&gt;MongoDB&lt;/li&gt;
+                        &lt;li&gt;Redis&lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/li&gt;
+        &lt;li&gt;Version Control &amp; Deployment
+            &lt;ol type="A"&gt;
+                &lt;li&gt;Git &amp; GitHub&lt;/li&gt;
+                &lt;li&gt;CI/CD&lt;/li&gt;
+                &lt;li&gt;Hosting
+                    &lt;ol type="I"&gt;
+                        &lt;li&gt;Netlify&lt;/li&gt;
+                        &lt;li&gt;Vercel&lt;/li&gt;
+                        &lt;li&gt;AWS&lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    <hr>
+    <h4>Output:</h4>
+    <p>
+    <ol type="1">
+        <li>Frontend Development
+            <ol type="A"> Uppercase Letters 
+                <li>HTML
+                    <ol type="a">
+                        <li>Basics
+                            <ol type="I">
+                                <li>Elements</li>
+                                <li>Attributes</li>
+                                <li>Forms</li>
+                            </ol>
+                        </li>
+                        <li>Advanced
+                            <ol type="i">
+                                <li>Semantic Tags</li>
+                                <li>Media Elements</li>
+                                <li>Canvas & SVG</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>CSS
+                    <ol type="a">
+                        <li>Selectors</li>
+                        <li>Box Model</li>
+                        <li>Layout
+                            <ol type="I">
+                                <li>Flexbox</li>
+                                <li>Grid</li>
+                                <li>Positioning</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>JavaScript
+                    <ol type="i">
+                        <li>Basics
+                            <ol type="a">
+                                <li>Variables</li>
+                                <li>Data Types</li>
+                                <li>Operators</li>
+                            </ol>
+                        </li>
+                        <li>DOM Manipulation</li>
+                        <li>ES6+ Features</li>
+                        <li>Frameworks
+                            <ol type="I">
+                                <li>React</li>
+                                <li>Angular</li>
+                                <li>Vue</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>Backend Development
+            <ol type="A">
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Authentication
+                    <ol type="i">
+                        <li>Sessions</li>
+                        <li>JWT</li>
+                        <li>OAuth</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>Databases
+            <ol type="I">
+                <li>SQL
+                    <ol type="a">
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                    </ol>
+                </li>
+                <li>NoSQL
+                    <ol type="i">
+                        <li>MongoDB</li>
+                        <li>Redis</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>Version Control & Deployment
+            <ol type="A">
+                <li>Git & GitHub</li>
+                <li>CI/CD</li>
+                <li>Hosting
+                    <ol type="I">
+                        <li>Netlify</li>
+                        <li>Vercel</li>
+                        <li>AWS</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    </p>
+       </td>
+                </tr>
+            </tbody>
+           </table>
+ </ol>
+        </div>
+        <hr>
+       <div id="table">
+        <h2>Table in HTML</h2>
+        <p>An HTML <b>table</b> is a way to organize and display data in a <b>row-and-column</b> format on a webpage. It is created using the &lt;<b>table</b>&gt; element in HTML. Tables are useful for showing structured information like schedules, price lists, or comparisons.</p>
+       <h4>Basic Structure of an HTML Table:</h4>
+         <ul>
+            <li>&lt;<b>table&gt; →</b>Defines the table.</li>
+            <li>&lt;<b>tr&gt;(Table Row) →</b>Defines a row in the table.</li>
+            <li>&lt;<b>th&gt; (Table Header)→</b>Defines a header cell (bold and centered by default).</li>
+            <li>&lt;<b>td&gt; (Table Data)→</b>Defines a normal data cell.</li>
+            <li>&lt;<b>tfoot&gt;→</b>The &lt;<b>tfoot&gt;</b> element in HTML is used to group footer content in a table.</li>
+            <li>&lt;<b>caption&gt;→</b>The &lt;<b>caption&gt;</b> element is used to add a title or description to a table.</li>
+            <li><b>colspan:</b>Used to merge multiple columns into one cell</li>
+            <li><b>rowspan:</b>Used to merge multiple rows into one cell.</li>
+            <li><b>border:</b>This attribute is used to define the thickness of the border (the lines) around the table and its cells.</li>
+         </ul>
+         <table border="1" width="400">
+            <thead>
+                <tr>
+                    <th>Example 1</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                          <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;HTML Table Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Student Information&lt;/h2&gt;
+    &lt;table border="1"&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;th&gt;Course&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Rahul&lt;/td&gt;
+            &lt;td&gt;20&lt;/td&gt;
+            &lt;td&gt;BCA&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Priya&lt;/td&gt;
+            &lt;td&gt;22&lt;/td&gt;
+            &lt;td&gt;MCA&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+    <hr>
+    <h4>Output:</h4>
+    <p>
+        <table border="1" width="400">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>20</td>
+            <td>BCA</td>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>22</td>
+            <td>MCA</td>
+        </tr>
+    </table>
+    </p>
+                    </td>
+                </tr>
+            </tbody>
+         </table> <br>
+         <hr>
+         <h3>HTML Table with Colspan</h3>
+         <p>HTML Table with <b>Colspan</b> allows you to merge or combine adjacent table cells <b>horizontally</b>, creating a single, wider cell that spans across <b> multiple columns</b>.</p>
+         <p><b>Note:</b> The colspan is defined as the <th> element.</p>
+            <table border="1" width="400">
+               <thead>
+                <tr>
+                    <th>Example of colspan</th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                    <td>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;colspan Table Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table border="1"&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th colspan="2"&gt;Subjects&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Rahul&lt;/td&gt;
+            &lt;td&gt;Math&lt;/td&gt;
+            &lt;td&gt;Science&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Priya&lt;/td&gt;
+            &lt;td&gt;English&lt;/td&gt;
+            &lt;td&gt;Computer&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><hr>
+<h4>output:</h4>
+<p>
+     <table border="1" width="400">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Subjects</th>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>Math</td>
+            <td>Science</td>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>English</td>
+            <td>Computer</td>
+        </tr>
+    </table>
+</p>
+                    </td>
+                </tr>
+               </tbody>
+            </table><br> <hr>
+            <h3>HTML Table with Rowspan</h3>
+            <p>The HTML attribute rowspan determines how many rows a specific cell in a table should cover. When a cell spans <b>multiple rows</b>, it occupies the space of those <b>rows</b> within the table.</p>
+         <table border="1" width="400">
+            <thead>
+                <tr>
+                    <th>Example of rowspan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                         <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Rowspan Table Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table border="1"&gt;
+        &lt;tr&gt;
+            &lt;th rowspan="2"&gt;Name&lt;/th&gt;
+            &lt;th&gt;Subject&lt;/th&gt;
+            &lt;th&gt;Marks&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Math&lt;/td&gt;
+            &lt;td&gt;90&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Rahul&lt;/td&gt;
+            &lt;td&gt;Science&lt;/td&gt;
+            &lt;td&gt;85&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre> <hr>
+<h4>Output:</h4>
+<p>
+    <table border="1" width="400">
+        <tr>
+            <th rowspan="2">Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>Science</td>
+            <td>85</td>
+        </tr>
+    </table>
+</p>
+                    </td>
+                </tr>
+            </tbody>
+         </table>  <br>
+         <table border="1" width="600">
+            <caption><b>Weekly Class Schedule using HTML Table</b></caption>
+            <thead>
+                <tr>
+                    <th>Example 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Time Table Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Weekly Class Schedule&lt;/h2&gt;
+    &lt;table border="1"&gt;
+        &lt;tr&gt;
+            &lt;th rowspan="2"&gt;Time&lt;/th&gt;
+            &lt;th colspan="5"&gt;Days&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Monday&lt;/th&gt;
+            &lt;th&gt;Tuesday&lt;/th&gt;
+            &lt;th&gt;Wednesday&lt;/th&gt;
+            &lt;th&gt;Thursday&lt;/th&gt;
+            &lt;th&gt;Friday&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;9:00 - 10:00&lt;/td&gt;
+            &lt;td&gt;Math&lt;/td&gt;
+            &lt;td&gt;English&lt;/td&gt;
+            &lt;td&gt;Physics&lt;/td&gt;
+            &lt;td rowspan="2"&gt;Lab&lt;/td&gt;
+            &lt;td&gt;History&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;10:00 - 11:00&lt;/td&gt;
+            &lt;td&gt;Computer&lt;/td&gt;
+            &lt;td&gt;Biology&lt;/td&gt;
+            &lt;td&gt;Chemistry&lt;/td&gt;
+            &lt;td&gt;Geography&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;11:00 - 12:00&lt;/td&gt;
+            &lt;td colspan="2"&gt;Physical Education&lt;/td&gt;
+            &lt;td&gt;Math&lt;/td&gt;
+            &lt;td&gt;English&lt;/td&gt;
+            &lt;td&gt;Civics&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<hr>
+<h4>Output:</h4>
+<p>
+    <table border="1" width="600">
+        <tr>
+            <th rowspan="2">Time</th>
+            <th colspan="5">Days</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>9:00 - 10:00</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td rowspan="2">Lab</td>
+            <td>History</td>
+        </tr>
+        <tr>
+            <td>10:00 - 11:00</td>
+            <td>Computer</td>
+            <td>Biology</td>
+            <td>Chemistry</td>
+            <td>Geography</td>
+        </tr>
+        <tr>
+            <td>11:00 - 12:00</td>
+            <td colspan="2">Physical Education</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Civics</td>
+        </tr>
+    </table>
+</p>
+                    </td>
+                </tr>
+            </tbody>
+         </table>
+        </div>
+        <hr>
+         <div>
+        <h3>Reference</h3>
+        <h4>
+          Watch this complete video to learn more about Nested List and Table in HTML.
+        </h4>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/AJ4E1zf5tQs?si=aBLj73W8iVaPi5_F"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <br />
+        <p>
+          Documentation:
+            <a href="https://www.geeksforgeeks.org/html/nested-list-in-html/" target="_blank">Nested Lists</a> and <a href="https://www.geeksforgeeks.org/html/html-tables/" target="_blank">Table</a> in HTML
+        </p>
+      </div>
+      <h4><a href="#main">&#x21A9;Back to Top</a></h4>
+    </main>
+</body>
+</html>

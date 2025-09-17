@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Page Website</title>
+  </head>
+  <body>
+    <main id="main">
+       <header>
+        <h1>Complete HTML Documentation</h1>
+        <nav>
+        <a href="webdev.html">Home</a>&nbsp;
+         <a href="htmlbasic.html">HTML Introduction</a>&nbsp;
+        <a href="List&table.html">List and Table</a>&nbsp;
+        <a href="div&classid.html">HTML Elememts</a>&nbsp;
+        <a href="form.html">HTML Form</a>&nbsp;
+        <a href="multipage.html"> Media Tag and Multi Page Website</a>
+         </nav>
+      </header><hr>
+        <h1>Media Tag and Multi Page Website</h1>
+        <h4>Quick Links&#x1F517;</h4>
+        <nav>
+            <ul>
+                <li><a href="#media_tag">Media Tag</a></li>
+                <li><a href="#ad_mediatag">Advantage of Media Tag</a></li>
+                <li><a href="#audio_tag">&lt;audio&gt; Tag</a></li>
+                <li><a href="#audio_attr">Attributes of &lt;audio&gt; Tag</a></li>
+                <li><a href="#audio_exa">&lt;audio&gt; tag Example</a></li>
+                <li><a href="#video_tag">&lt;video&gt; Tag:</a></li>
+                <li><a href="#video_attr">Attributes of &lt;video&gt; Tag</a></li>
+                <li><a href="#video_exa">&lt;video&gt; tag Example</a></li>
+                <li><a href="#youtube_video">Embedding YouTube Videos</a></li>
+                <li><a href="#multi_page">Multi Page Website Example</a></li>
+                <li><a href="#Reference">Reference</a></li>
+            </ul>
+        </nav>
+      <hr />
+      <div>
+        <h1 id="media_tag">Media Tag</h1>
+        <p>
+          In HTML, "<b>media tags</b>" refer to the elements used to embed and
+          control various types of multimedia content within a web page. These
+          tags allow you to include <b>images</b>, <b>audio</b>, and
+          <b>video</b>, enhancing the user experience beyond plain text.
+        </p>
+        <table border="1">
+          <thead>
+            <tr>
+              <th><b>Media Tags</b></th>
+              <th><b>Description</b></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt;audio&gt;</td>
+              <td>
+                An inline element is used to embed sound files into a web page.
+              </td>
+            </tr>
+            <tr>
+              <td>&lt;video&gt;</td>
+              <td>Used to embed video files into a web page.</td>
+            </tr>
+            <tr>
+              <td>&lt;source&gt;</td>
+              <td>
+                Used to attach multimedia files like audio, video, and pictures.
+              </td>
+            </tr>
+            <tr>
+              <td>&lt;embed&gt;</td>
+              <td>
+                Used for embedding external applications, generally multimedia
+                content like audio or video, into an HTML document.
+              </td>
+            </tr>
+            <tr>
+              <td>&lt;track&gt;</td>
+              <td>
+                Specifies text tracks for media components, specifically for
+                audio and video elements..
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <hr />
+        <div>
+          <h2 id="ad_mediatag">Advantage of Media Tag:</h2>
+          <ul>
+            <li>Plugins are no longer required</li>
+            <li>
+              Speed - anything naturally integrated into a browser will be
+              rendered and executed in a faster fashion than imported
+              third-party
+            </li>
+            <li>Native (built-in) controls are provided by the browser.</li>
+            <li>
+              Accessibilities (keyboard, mouse) are built-in automatically
+            </li>
+          </ul>
+        </div>
+        <br />
+        <hr />
+        <div id="audio_tag">
+          <h2>&lt;audio&gt; Tag:</h2>
+          <p>
+           The <b>&lt;audio&gt;</b> tag in HTML5 is used to embed audio content on a webpage. It allows you to play audio files like MP3, OGG, or WAV directly in the browser. The <b>&lt;audio&gt;</b> element provides attributes for controlling playback, such as play, pause, and volume.
+          </p>
+          <h3>Syntax:</h3>
+          <pre>
+            <b>&lt;audio&gt;</b>
+                &lt;source src="sample.mp3" type="audio/mpeg"&gt;
+            <b>&lt;/audio&gt;</b>
+          </pre>
+          <img src="/images/audiotag.png" alt="audiotag" width="500"><hr>
+          <div id="audio_attr">
+            <h2>Attributes of &lt;audio&gt; Tag</h2>
+            <ul>
+                <li><b>controls →</b>shows play, pause, volume buttons.</li>
+                <li><b>autoplay →</b>plays automatically (may be blocked by browsers).</li>
+                <li><b>loop →</b>repeats the audio automatically.</li>
+                <li><b>muted →</b>starts audio in muted state.</li>
+            </ul>
+          <div><br><hr><br>
+            <table border="1">
+            <thead>
+                <tr>
+                    <th id="audio_exa"><b>&lt;audio&gt; tag Example</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt; 
+  &lt;body&gt;
+    &lt;p&gt;Audio Sample&lt;/p&gt;
+   <b> &lt;audio&gt;</b>
+      &lt;source src= &quot;/media/HTML_Day05_wavy.mp3&quot;
+        type=&quot;audio/mpeg&quot;&gt;
+   <b> &lt;/audio&gt;</b>
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><hr>
+<h3>Output:</h3>
+<p>Audio Sample</p>
+<audio src="/media/HTML_Day05_wavy.mp3" controls ></audio>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+          </div>
+        </div><br><hr>
+        <div id="video_tag">
+            <h2>&lt;video&gt; Tag:</h2>
+            <p>The <b> &lt;video&gt;</b> element in HTML is used to show video content on web pages. It supports various video formats, including MP4, WebM, and Ogg. It is introduced in HTML5.</p>
+        <h3>Syntax:</h3>
+        <p><b>&lt;video</b> src="" controls<b>&gt;</b>  &lt;/video&gt;<br>
+               or <br>
+<b>&lt;video</b> controls="controls"<b>&gt;</b>
+&lt;source src="video_filename" type="video_type"&gt;
+ <b>&lt;/video&gt;</b></p>
+ <img src="/images/video tag.png" alt="videotag" width="500">
+    </div><br><hr>
+    <div id="video_attr">
+        <h2>Attributes of &lt;video&gt; Tag</h2>
+        <ul>
+            <li><b>controls →</b> adds play/pause/volume controls.</li>
+            <li><b>autoplay →</b> starts video automatically.</li>
+            <li><b>loop →</b> repeats video</li>
+            <li><b>muted →</b> starts video muted.</li>
+            <li><b>poster="image.jpg" →</b> shows an image before the video plays.</li>
+            <li><b>width & height →</b> set video size.</li>
+        </ul>
+    </div><br><hr>
+    <div id="video_exa">
+    <table border="1">
+            <thead>
+                <tr>
+                    <th><b>&lt;video&gt; tag Example</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt; 
+  &lt;body&gt;
+    &lt;p&gt;Video Tag Sample&lt;/p&gt; 
+   <b> &lt;video&gt;</b>
+      &lt;source src= &quot;/media/rohit.mp4&quot;
+        type=&quot;video/mp4&quot;&gt;  
+   <b> &lt;/video&gt;</b>
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><hr>
+<h3>Output:</h3>
+<p>Video Tag Sample</p>
+<video src="/media/rohit.mp4" controls width="500"></video>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div><br><hr>
+        <div id="youtube_video">
+            <table>
+                <caption><b>Embedding YouTube Videos</b></caption>
+                <tr>
+                    <td><iframe width="500" height="315" src="https://www.youtube.com/embed/1pcikNlDB-4?si=EXfx4oLjMYhZpwn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                    <td><iframe width="500" height="315" src="https://www.youtube.com/embed/GkZN_-HMCJ8?si=1UQVHEVBoNDnRAE-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                    <td><iframe width="500" height="315" src="https://www.youtube.com/embed/AJ4E1zf5tQs?si=Vf04_vXKYBESXeRX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                </tr>
+                <tr>
+                    <td><iframe width="500" height="315" src="https://www.youtube.com/embed/k78lNSAB8VY?si=lG0P-Yqrf-Dh--ql" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                    <td><iframe width="500" height="315" src="https://www.youtube.com/embed/a4j9R_DvZ8M?si=HTn5yTt_cI8wNYW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                    <td><iframe width="500" height="315" src="https://www.youtube.com/embed/NGYp1zCBthk?si=uIuA0WO5gRJ1BFjC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                </tr>
+            </table>
+        </div><br><hr>
+        <div id="multi_page">
+            <h1>Multi Page Website Example</h1>
+            <p>A multi-page website in HTML means your project has more than one HTML file (like index.html, about.html, contact.html) and you link them together using &lt;a&gt; (anchor) tags.</p>
+             <nav>
+       <ol>
+        <li>
+         <a href="htmlbasic.html" target="_blank">Lecture->1 HTML basics</a>
+        </li>
+        <li>
+        <a href="List&table.html" target="_blank">Lecture->2 Nested List and Table in HTML</a>
+        </li>
+        <li><a href="div&classid.html" target="_blank">Lecture->3 HTML BoilerPlate Code, Div, Class, ID, and File Path</a></li>
+        <li><a href="form.html" target="_blank">Lecture->4 HTML Form</a></li>
+       </ol>
+     </nav>
+        </div>
+        <div id="Reference">
+        <h3>Reference</h3>
+        <h4>
+          Watch this complete video to learn more about Media Tag and multi-page Website.
+        </h4>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/NGYp1zCBthk?si=AlgLSYNbacdAIzy_"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <br />
+        <p>
+          Documentation:
+          <a
+            href="https://www.geeksforgeeks.org/html/what-are-the-media-element-tags-introduced-by-html5/"
+            target="_blank"
+          >
+            To Learn more about Media Tag
+          </a>
+        </p>
+        <p>
+          <a href="https://www.notion.so/HTML-MEDIA-2673a78e0e2280e7aaede039776da705" target="_blank">Complete Notes</a>
+        </p>
+      </div>
+      <h4><a href="#main">&#x21A9;Back to Top</a></h4>
+      </div>
+      <footer>
+    <p>Copyright &copy; All rights are reserved</p>
+   </footer>
+    </main>
+  </body>
+</html>
